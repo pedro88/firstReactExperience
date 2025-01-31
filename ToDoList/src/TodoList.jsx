@@ -17,11 +17,13 @@ const TodoList = () => {
             <hr></hr>
             <section className="list">
                 <h2>Todos</h2>
-                <ul>
-                    <li><input type="checkbox" /><label><strong> Learn React</strong> </label>  </li>
-                    <li><input type="checkbox" /><label><strong> Be Awesome!</strong> </label>  </li>
-                    <li><input type="checkbox" /><label><strong> Keep Learning React</strong> </label>  </li>
-                </ul>
+                
+                    <input type="checkbox" /><label> Learn React </label> 
+                    <br></br>
+                    <input type="checkbox" /><label> Be Awesome! </label>  
+                    <br></br>
+                <input type="checkbox" /><label> Keep Learning React </label>  
+                
             </section>
         </main>
         </>
