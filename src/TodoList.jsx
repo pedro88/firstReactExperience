@@ -1,18 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-const Task = (props) => {
-    return (
-        <>
-         <input type="checkbox" /><label>  {props.task} </label>
-         <br></br>
-        </>
-    )
-}
-
-
-
-
+import Task from './Task.jsx'
 
 
 
