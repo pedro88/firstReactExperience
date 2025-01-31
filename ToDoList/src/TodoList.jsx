@@ -1,6 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
+const Task = (props) => {
+    return (
+        <>
+         <input type="checkbox" /><label>  {props.task} </label>
+         <br></br>
+        </>
+    )
+}
+
+
+
+
+
+
+
+
 const TodoList = () => {
     return (
         <>
@@ -16,19 +32,16 @@ const TodoList = () => {
             </button>
             <hr></hr>
             <section className="list">
-                <h2>Todos</h2>
-                
-                    <input type="checkbox" /><label> Learn React </label> 
-                    <br></br>
-                    <input type="checkbox" /><label> Be Awesome! </label>  
-                    <br></br>
-                <input type="checkbox" /><label> Keep Learning React </label>  
-                
+                <h2>Todos</h2>                
+                <Task task="trying new layout" />
+                <Task task="Youhou it's work!!" />
+                <Task task="I even add a 'br' to adding some style" />
             </section>
         </main>
         </>
     )
 }
+
 
 
 export default TodoList
