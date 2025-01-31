@@ -9,7 +9,7 @@ const TodoList = () => {
         </header>
         <main>
             <form>
-                Type a new todo
+                <input type='text' placeholder='Type a new todo' />
             </form>
             <button>
                 Add Todo
@@ -17,10 +17,11 @@ const TodoList = () => {
             <hr></hr>
             <section className="list">
                 <h2>Todos</h2>
-                <ol>
-                    <li>Learn React</li>
-                    <li>Be Awesome</li>
-                </ol>
+                <ul>
+                    <li><input type="checkbox" /><label><strong> Learn React</strong> </label>  </li>
+                    <li><input type="checkbox" /><label><strong> Be Awesome!</strong> </label>  </li>
+                    <li><input type="checkbox" /><label><strong> Keep Learning React</strong> </label>  </li>
+                </ul>
             </section>
         </main>
         </>
