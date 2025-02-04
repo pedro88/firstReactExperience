@@ -1,19 +1,22 @@
 {
 	"task": [
 		{
-			"isComplete": "false",
-			"isDelete": "false",
-			"name": "first task"
+			"isComplete": false,
+			"isDelete": false,
+			"name": "first task",
+			"id":1
 		},
 		{
-			"isComplete": "false",
-			"isDelete": "false",
-			"name": "second task"
+			"isComplete": false,
+			"isDelete": false,
+			"name": "second task",
+			"id":2
 		},
 		{
-			"isComplete": "true",
-			"isDelete": "false",
-			"name": "third task"
+			"isComplete": false,
+			"isDelete": false,
+			"name": "third task",
+			"id":3
 		}
 	]
 }
