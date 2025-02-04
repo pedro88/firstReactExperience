@@ -1,3 +1,19 @@
 .isComplete {
     text-decoration: line-through;
 }
+
+button {
+    margin: 10px;
+}
+
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    text-align: left;
+}
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}

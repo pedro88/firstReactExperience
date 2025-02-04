@@ -61,6 +61,7 @@ const TodoWrapper = () => {
 
 	return (
 		<div>
+            <h1>My super Todo List</h1>
 			<TodoForm 
             addTodo={addTodo} 
             />
