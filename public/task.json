@@ -1,5 +1,5 @@
-{
-	"task": [
+[
+	
 		{
 			"isComplete": false,
 			"isDelete": false,
@@ -18,5 +18,5 @@
 			"name": "third task",
 			"id":3
 		}
-	]
-}
+	
+]

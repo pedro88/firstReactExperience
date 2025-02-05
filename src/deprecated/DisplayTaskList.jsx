@@ -1,15 +1,25 @@
 import { useEffect, useState } from "react";
 import AddTask from "./AddTask";
+// import AddTask from "./AddTask";
+import task from "../public/task"
 
-function DisplayTaskList(name) {
-	const [tasks, setTasks] = useState([]);
+
+function DisplayTaskList() {
+
+	let [tasks, setTasks] = useState( [{
+		isComplete: false,
+		isDelete: false,
+		name: "first task",
+		id:1
+	}])
+	console.log("tasks: ", tasks)
+
 
 	useEffect(() => {
-		fetch("./public/task.json")
-			.then((response) => response.json())
-			.then((data) => setTasks(data.task))
-			.catch((error) => console.log(error));
-	}, []);
+		// localStorage.setItem("task: ", JSON.stringify(tasks))
+		setTasks(JSON.parse(localStorage.getItem("task")))
+		console.log("tasklist bad??: ", JSON.stringify(tasks))
+	}, [tasks]);
 
 	const handleChange = (id, index) => {
 		let newTaskList = [...tasks]
@@ -21,6 +31,7 @@ function DisplayTaskList(name) {
 
 	function ListTask() {
 		return tasks.map((task, index) => {
+			
 			return (
 				<>
 					<li key={task.id}>
@@ -41,8 +52,11 @@ function DisplayTaskList(name) {
 			)
 		});
 	}
+
+
 	return (
 		<ListTask />
+
 	)
 
 }

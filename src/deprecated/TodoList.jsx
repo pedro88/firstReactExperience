@@ -11,7 +11,9 @@ const TodoList = () => {
 				<h1>My Todo App</h1>
 			</header>
 			<main>
-				<AddTask />
+				<AddTask
+				
+				/>
 				<hr></hr>
 				<section className="list">
 					<h2>Todos</h2>
